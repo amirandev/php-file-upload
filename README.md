@@ -1,8 +1,10 @@
 # How to use?
 
-Put the storage class to somewhere and use it like that:
 
-`if($_SERVER['REQUEST_METHOD'] == 'POST'){
+**Put the storage class to somewhere and use it like that:**
+
+```
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
     //                     'input name'   'save to - where?'
     $run = Storage::upload('upload_file', 'uploads/files');
     echo 'input name: '.$run->input.'<br>';
@@ -25,5 +27,7 @@ Put the storage class to somewhere and use it like that:
     }
     
     exit;
-}`
+}
+```
+
 
